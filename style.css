@@ -1,0 +1,163 @@
+body{
+    background-color: white;
+	margin: 0px auto;
+	width:100%;
+}
+
+.banner{ 
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    height: 150px;
+    width:auto;
+    background-color:white;
+
+}
+.favicon{
+    width:150px;
+    height:150px;
+    max-width:200px;
+    object-fit:cover;
+}
+
+.hbutton{
+    width:200px;
+    height:64px;
+    font-family: "Montserrat", sans-serif;
+    font-variant:small-caps;
+    font-weight: 800;
+    font-size:24px;
+    line-height:64px;
+    text-align:center;
+    color:black;
+}
+.hbutton:hover {
+  color: #EC058E;
+}
+/*hcontact is modified from Cool Beans 60fps*/
+.hcontact {
+    width:200px;
+    height:64px;  
+    border: 2px solid #0EB697;
+    border-radius: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+    line-height:64px;
+    text-align:center;
+    color: Black;
+  }
+  .hcontact::after {
+    width: 200px;
+    height: 68px;
+    background-color: #0EB697;
+    border-radius: 8px;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(15deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    z-index: -1;
+  }
+  .hcontact:hover::after {
+    transform: translate(0, 0);
+  }
+  .hcontact:hover {
+    color: White;
+    transform:scale(1.05);
+    will-change:transform;
+  }
+
+  .video{
+    width:100%;
+    height:720px;
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    position:relative;
+    overflow: hidden;
+    background-color: #0EB697;
+  }
+  .videoplay{
+    display: flex;
+    align-self:center;
+    position:absolute;
+    overflow: hidden;
+  }
+
+  .vlay1{
+    position:relative;
+    display: flex;
+    top:0;
+    left:0;
+  }
+  .vlay2{
+    position:absolute;
+    display: flex;
+    align-self:flex-end;
+  }
+
+  .content1{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    flex-wrap:wrap;
+    align-content:center;
+  }
+  .portrait{
+    display:flex;
+    width:30%;
+    height:auto;
+    font-family: "Montserrat", sans-serif;
+    width:400px;
+    font-size:16px;
+  }
+  h1{
+    font-family: "Saira Stencil One", sans-serif;
+    width:800px;
+    padding:64px;
+    margin-left:64px;
+    line-height:128px;
+  font-weight: 400;
+  font-size:64px;
+  font-style: normal;
+  display:flex;
+  }
+  h2{
+    font-family: "Montserrat", sans-serif;
+    width:100%;
+    margin-inline: 64px;
+    text-align:center;
+  }
+  h3{font-family: "Saira Stencil One", sans-serif;
+    line-height:128px;
+    font-weight: 400;
+  font-size:64px;
+  font-style: normal;
+  display:flex;
+  }
+  .GR{
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+    align-content:flex-start;
+    justify-content:center;
+  }
+  .footer{
+    width:100%;
+    height:200px;
+    display:flex;
+    background-color:#CAFCEA;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size:16px;
+  }
