@@ -1,0 +1,116 @@
+p, body{
+    margin:0 }
+
+body{
+      background-color: white;
+    }
+ /*REMEMBER THIS PLEASE FREY. PLEEEASE. C'MON.*/
+       
+ /*The header also uses flexbox. Unlike using float, this is a lot easier to layout your items.
+  With just "display: flex" and "justify-content: space-between," you can add as many things
+  as you want into the header container. The browser will try to space out these items evenly
+  and side by side for you. 
+  
+  Workflow:
+    1. set up your flex box code in the default section
+    2. Modify the code in the sections for larger viewports */
+    .header {
+      display: flex;
+      padding: 15px;
+      gap:16px;
+      width: 100vw;
+      box-sizing: border-box;
+      justify-content: space-evenly;
+      align-items:center;
+      background-color:white;
+        font-family: "Montserrat", sans-serif;
+        font-variant:small-caps;
+        font-weight: 800;
+        font-size:24px;
+  }
+
+    .favicon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:16%;
+    object-fit:cover;
+  }
+
+    .hbutton{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:16%;
+      padding:16px;
+      color:black;
+      box-sizing: border-box;
+      border-radius: 16px;
+    }
+    .hbutton:hover{
+      color: #EC058E;
+    }
+/*hcontact is modified from Cool Beans 60fps*/
+    .hcontact{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:16%;
+      padding:16px;
+      border-radius: 16px;
+      color:black;
+      overflow: clip;
+      position: relative;
+      text-decoration: none;
+      transition: 0.2s transform ease-in-out;
+      will-change: transform;
+      z-index: 0;
+      box-sizing: border-box;
+    }
+    .hcontact::after{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      height:100%;
+      border-radius: 16px;
+      background-color: #0EB697;
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      transform: translate(-100%, 0) rotate(15deg);
+      transform-origin: top left;
+      transition: 0.2s transform ease-out;
+      z-index: -1;
+    }
+    .hcontact:hover::after {
+      transform: translate(0, 0);
+    }
+    .hcontact:hover {
+      color: White;
+      transform:scale(1.00);
+      will-change:transform;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction:column;
+        gap: 10px;
+        padding: 10px;
+        justify-content: center;
+        align-content:center;
+    }
+
+    .video{
+        display: flex;
+        justify-content: center;
+        align-content:center;
+        padding:16px;
+        overflow: hidden;
+  }
+    
+ /* MEDIUM viewport (380px and above)
+    You can see that we are just making modifications to the .container and .content-block.
+    Because CSS styles cascades. Typically, the styles appears later in the file overwrites the styles above.  
+    */
